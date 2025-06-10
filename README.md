@@ -78,3 +78,15 @@ $ sh watch_run.sh
 
 Usage: watch_run.sh <file-to-watch>
 ```
+
+### Html to PDF
+
+Uses Puppeteer to download an HTML as PDF. Some webpages don't print so well,
+this gives an easy solution. Uses no sandbox which is needed on newer versions
+of Ubuntu.
+
+```text
+$ node html-to-pdf.js 'https://knowm.org/thermodynamic-computing/'
+
+PDF saved as output.pdf
+```
