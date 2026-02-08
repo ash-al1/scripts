@@ -90,3 +90,23 @@ $ node html-to-pdf.js 'https://knowm.org/thermodynamic-computing/'
 
 PDF saved as output.pdf
 ```
+
+### Grall
+
+Cat an entire function or class definition of python files.
+
+```sh
+$ grall main ./publisher.py
+
+def main(args=None):                                                                
+    rclpy.init(args=args)                                                           
+    node = CSIPublisher()                                                           
+                                                                                    
+    try:                                                                            
+        rclpy.spin(node)                                                            
+    except KeyboardInterrupt:                                                       
+        pass                                                                        
+    finally:                                                                        
+        node.destroy_node()                                                         
+        rclpy.shutdown()
+```
